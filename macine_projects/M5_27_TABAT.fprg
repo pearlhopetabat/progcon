@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-02 04:26:43 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzU7MjAxOS0xMi0wMjswMzo1NjoxMiBQTTsyMjEw"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzU7MjAxOS0xMi0wMjswNDoyNjo0MyBQTTsxOzIzMjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <declare name="Num3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please type in three numbers separately.&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;Next number.&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;One more!&quot;" newline="True"/>
+            <input variable="Num3"/>
+            <if expression="Num1 &lt; Num2">
+                <then>
+                    <output expression="Num1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Num2 &lt; Num3">
+                        <then>
+                            <output expression="Num2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Num3 &lt; Num1">
+                                <then>
+                                    <output expression="Num3" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
